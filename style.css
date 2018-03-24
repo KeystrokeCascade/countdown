@@ -1,0 +1,44 @@
+html {
+  background: no-repeat center center fixed;
+  background-color: lightblue;
+  background-size: cover;
+  min-height: 400px;
+}
+
+#time {
+  text-align: center;
+  font-family: Lucida Console;
+  font-size: 26px;
+}
+
+#day {
+  text-align: center;
+  font-family: Lucida Console;
+  font-size: 26px;
+}
+
+#schedule {
+  text-align: center;
+  font-family: Lucida Console;
+  font-size: 26px;
+}
+
+#pill {
+  text-align: center;
+  vertical-align: middle;
+  font-family: Lucida Console;
+  font-size: 17px;
+}
+
+.pill {
+  line-height: 190%;
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 500px;
+  padding: .6em;
+  opacity: 0.9;
+}
