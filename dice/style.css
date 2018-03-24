@@ -1,0 +1,53 @@
+html {
+  background-color: black;
+  color: green;
+  font-family: Lucida Console;
+  font-size: 16pt;
+}
+
+.button {
+    background-color: black;
+    border: green;
+    border-style: solid;
+    border-width: 2px;
+    color: green;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16pt;
+    font-family: Lucida Console;
+}
+
+.button:hover {
+    background-color: green;
+    color: black;
+}
+
+h1 {
+  font-size: 20pt;
+}
+
+a:link {
+    color: green; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
