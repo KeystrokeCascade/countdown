@@ -1,3 +1,4 @@
+//Blinks the underscore
 var underscore = "_"
 function blinker() {
   if (underscore == "_") {
