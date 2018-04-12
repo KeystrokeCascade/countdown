@@ -5,7 +5,7 @@ var aspect_ratio = screen_x / screen_y
 
 //generates the url for derpibooru
 var random = Math.floor((Math.random() * 999999999999999999) + 0);
-var url = "https://derpibooru.org/search.json?q=score.gte%3A250%2C+Aspect_ratio%3A" + aspect_ratio + "~0.01%2C+NOT+animated%2C+NOT+absurd+res%2C+NOT+watermark%2C+NOT+eqg%2C+NOT+anthro%2C+NOT+human%2C+NOT+sfm&sf=random%3A" + random
+var url = "https://derpibooru.org/search.json?q=score.gte%3A250%2C+Aspect_ratio%3A" + aspect_ratio + "~0.01%2C+NOT+animated%2C+NOT+absurd+res%2C+NOT+watermark%2C+NOT+eqg%2C+NOT+anthro%2C+NOT+human%2C+NOT+sfm&sf=random%3A" + random + "&filter_id=56027"
 
 //gets an image from derpibooru  randomly with that aspect ratio
 var xmlhttp = new XMLHttpRequest();
