@@ -45,9 +45,10 @@ html {
 }
 
 .id {
-  height: 10px;
-  width: 20px;
+  height: 20px;
+  width: 60px;
   border 1px;
+  border-radius: 15px;
   font-size: 14px;
   background-color: #ffffff;
   opacity: 0.8;
