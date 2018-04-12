@@ -47,6 +47,8 @@ html {
 .id {
   height: 20px;
   width: 40px;
+  text-align: center;
+  vertical-align: middle;
   border 1px;
   border-radius: 5px;
   font-size: 14px;
