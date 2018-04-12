@@ -45,7 +45,7 @@ html {
 }
 
 .id {
-  height: 30px;
+  line-height: 16px;
   width: 40px;
   text-align: center;
   vertical-align: middle;
