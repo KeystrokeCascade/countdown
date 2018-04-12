@@ -32,7 +32,7 @@ html {
 
 .pill {
   line-height: 190%;
-  width: 320px;
+  width: 330px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -45,6 +45,6 @@ html {
 
 .id {
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  right: 1%;
+  bottom: 1%;
 }
