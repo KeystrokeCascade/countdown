@@ -15,7 +15,7 @@ xmlhttp.onreadystatechange = function() {
         var array_len = myObj.search.length;
         var image_num = Math.floor((Math.random() * array_len) + 0);
         var id = myObj.search[image_num].id;
-        document.getElementById("id").textContent = "https://derpibooru.org/" + id;
+        document.getElementById("id").href = "https://derpibooru.org/" + id;
         var image = myObj.search[image_num].image;
         document.documentElement.style.backgroundImage = "url(https:" + image + ")";
     }
