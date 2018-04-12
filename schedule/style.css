@@ -46,13 +46,12 @@ html {
 
 .id {
   height: 20px;
-  width: 60px;
+  width: 40px;
   border 1px;
-  border-radius: 15px;
+  border-radius: 5px;
   font-size: 14px;
   background-color: #ffffff;
   color: black;
-  background-color: transparent;
   text-decoration: none;
   opacity: 0.8;
   position: absolute;
