@@ -51,6 +51,9 @@ html {
   border-radius: 15px;
   font-size: 14px;
   background-color: #ffffff;
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
   opacity: 0.8;
   position: absolute;
   right: 1%;
