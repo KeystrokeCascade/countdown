@@ -14,6 +14,8 @@ xmlhttp.onreadystatechange = function() {
         var myObj = JSON.parse(this.responseText);
         var array_len = myObj.search.length;
         var image_num = Math.floor((Math.random() * array_len) + 0);
+        var id = myObj.search[image_num].id;
+        document.getElementById("id").textContent = id;
         var image = myObj.search[image_num].image;
         document.documentElement.style.backgroundImage = "url(https:" + image + ")";
     }
