@@ -1,3 +1,52 @@
+//Sets cookies
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+//Gets cookies
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+//Checks lewdness in cookies
+var lewdness = getCookie("lewdness");
+if (lewdness == "") {
+	setCookie("lewdness", "Unlewd", 365)
+	lewdness = "Unlewd"
+};
+
+//Sets the lewd button
+if (lewdness == "Lewd") {
+	var lewd_out = "Unlewd"
+} else {
+	var lewd_out = "Lewd"
+document.getElementById("lewd").textContent = lewd_out;
+
+//Lewds
+function lewd() {
+	if (lewdness == "Unlewd") {
+		setCookie("lewdness", "Lewd", 365)
+	} else if (lewdness == "Lewd") {
+		setCookie("lewdness", "Unlewd", 365)
+	};
+	location.reload()
+};
+
 //Collects the aspect ratio of the device
 var screen_x = window.innerWidth
 || document.documentElement.clientWidth
@@ -10,8 +59,12 @@ var screen_y = window.innerHeight
 var aspect_ratio = screen_x / screen_y
 
 //generates the url for derpibooru
+var lewd = ""
+if (lewdness == "Lewd") {
+	lewd = "&filter_id=56027"
+};
 var random = Math.floor((Math.random() * 999999999999999999) + 0);
-var url = "https://derpibooru.org/search.json?q=score.gte%3A250%2C+Aspect_ratio%3A" + aspect_ratio + "~0.1%2C+NOT+text%2C+NOT+animated%2C+NOT+absurd+res%2C+NOT+watermark%2C+NOT+eqg%2C+NOT+anthro%2C+NOT+human%2C+NOT+sfm&sf=random%3A" + random + "&filter_id=56027"
+var url = "https://derpibooru.org/search.json?q=score.gte%3A250%2C+Aspect_ratio%3A" + aspect_ratio + "~0.1%2C+NOT+text%2C+NOT+comic%2C+NOT+animated%2C+NOT+absurd+res%2C+NOT+watermark%2C+NOT+eqg%2C+NOT+anthro%2C+NOT+human%2C+NOT+sfm&sf=random%3A" + random + lewd
 
 //gets an image from derpibooru  randomly with that aspect ratio
 var xmlhttp = new XMLHttpRequest();
