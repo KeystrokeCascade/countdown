@@ -60,12 +60,13 @@ var screen_y = window.innerHeight
 var aspect_ratio = screen_x / screen_y
 
 //generates the url for derpibooru
-var lewd = ""
 if (lewdness == "Lewd") {
-	lewd = "&filter_id=56027"
-};
+	var lewd = "%2Cexlicit%2Cseggestive%2CNOT+watersports%2CNOT+scat%2CNOT+hyper%2CNOT+foalcon"
+} else {
+	var lewd = "%2Csafe%2C+NOT+anthro"
+}
 var random = Math.floor((Math.random() * 999999999999999999) + 0);
-var url = "https://derpibooru.org/search.json?q=score.gte%3A250%2C+Aspect_ratio%3A" + aspect_ratio + "~0.1%2C+NOT+text%2C+NOT+comic%2C+NOT+animated%2C+NOT+absurd+res%2C+NOT+watermark%2C+NOT+eqg%2C+NOT+anthro%2C+NOT+human%2C+NOT+sfm&sf=random%3A" + random + lewd
+var url = "https://derpibooru.org/search.json?q=score.gte%3A250%2C+Aspect_ratio%3A" + aspect_ratio + "~0.1" + lewd + "%2C+NOT+text%2C+NOT+comic%2C+NOT+animated%2C+NOT+absurd+res%2C+NOT+watermark%2C+NOT+eqg%2C+NOT+human%2C+NOT+sfm&sf=random%3A" + random + "&filter_id=56027"
 
 //gets an image from derpibooru  randomly with that aspect ratio
 var xmlhttp = new XMLHttpRequest();
