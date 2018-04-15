@@ -60,7 +60,7 @@ var aspect_ratio = screen_x / screen_y
 
 //generates the url for derpibooru
 if (lewdness == "Lewd") {
-	var lewd = "%2C+%28explicit+%7C%7C+questionable%29%2C+NOT+grimdark%2C+NOT+grotesque%2C+NOT+semi-grimdark%2C+NOT+watersports%2C+NOT+scat%2C+NOT+hyper%2C+NOT+foalcon%2C+NOT+impossibly+large+breasts"
+	var lewd = "%2C+NOT+safe%2C+NOT+grimdark%2C+NOT+grotesque%2C+NOT+semi-grimdark%2C+NOT+watersports%2C+NOT+scat%2C+NOT+hyper%2C+NOT+foalcon%2C+NOT+impossibly+large+breasts"
 } else {
 	var lewd = "%2C+safe%2C+NOT+anthro"
 }
