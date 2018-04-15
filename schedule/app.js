@@ -48,7 +48,7 @@ function lewd() {
 	location.reload();
 };
 
-//Collects the aspect ratio of the device
+//Collects the aspect ratio of the screen of the device
 var screen_x = window.innerWidth
 || document.documentElement.clientWidth
 || document.body.clientWidth;
