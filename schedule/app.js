@@ -65,9 +65,7 @@ if (lewdness == "Lewd") {
 	var lewd = "%2C+safe%2C+NOT+anthro"
 }
 var random = Math.floor((Math.random() * 999999999999999999) + 0);
-var url = "https://derpibooru.org/search.json?q=score.gte%3A250%2C+Aspect_ratio%3A" + aspect_ratio + "~0.1" + lewd + "%2C+NOT+impossibly+obese%2C+NOT+impossibly+large+ass%2C+NOT+impossibly+large+belly%2C+NOT+obese%2C+NOT+fat%2C+NOT+show+accurate%2C+NOT+traditional+art%2C+NOT+text%2C+NOT+comic%2C+NOT+meme%2C+NOT+screencap%2C+NOT+edit+screencap%2C+NOT+animated%2C+NOT+comparison%2C+NOT+absurd+res%2C+NOT+watermark%2C+NOT+eqg%2C+NOT+human%2C+NOT+sfm%2C+NOT+3d&sf=random%3A" + random + "&filter_id=56027"
-
-console.log(url)
+var url = "https://derpibooru.org/search.json?q=score.gte%3A250%2C+Aspect_ratio%3A" + aspect_ratio + "~0.1" + lewd + "%2C+NOT+dialogue%2C+NOT+impossibly+obese%2C+NOT+impossibly+large+ass%2C+NOT+impossibly+large+belly%2C+NOT+obese%2C+NOT+fat%2C+NOT+show+accurate%2C+NOT+traditional+art%2C+NOT+text%2C+NOT+comic%2C+NOT+meme%2C+NOT+screencap%2C+NOT+edit+screencap%2C+NOT+animated%2C+NOT+comparison%2C+NOT+absurd+res%2C+NOT+watermark%2C+NOT+eqg%2C+NOT+human%2C+NOT+sfm%2C+NOT+3d&sf=random%3A" + random + "&filter_id=56027"
 
 //gets an image from derpibooru  randomly with that aspect ratio
 var xmlhttp = new XMLHttpRequest();
