@@ -35,6 +35,7 @@ if (lewdness == "Lewd") {
 	var lewd_out = "Unlewd"
 } else {
 	var lewd_out = "Lewd"
+}
 document.getElementById("lewd").textContent = lewd_out;
 
 //Lewds
