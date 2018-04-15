@@ -45,7 +45,7 @@ function lewd() {
 	} else if (lewdness == "Lewd") {
 		setCookie("lewdness", "Unlewd", 365)
 	};
-	location.reload()
+	location.reload();
 };
 
 //Collects the aspect ratio of the device
