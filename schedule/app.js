@@ -40,11 +40,13 @@ document.getElementById("lewd").textContent = lewd_out;
 
 //Lewds
 function lewd() {
+	console.log(getCookie("lewdness"))
 	if (lewdness == "Unlewd") {
 		setCookie("lewdness", "Lewd", 365)
 	} else if (lewdness == "Lewd") {
 		setCookie("lewdness", "Unlewd", 365)
 	};
+	console.log(getCookie("lewdness"))
 	location.reload();
 };
 
