@@ -65,7 +65,7 @@ if (lewdness == "Lewd") {
 	var lewd = "%2C+safe%2C+NOT+anthro"
 }
 var random = Math.floor((Math.random() * 999999999999999999) + 0);
-var url = "https://derpibooru.org/search.json?q=score.gte%3A250%2C+Aspect_ratio%3A" + aspect_ratio + "~0.1" + lewd + "%2C+NOT+text%2C+NOT+comic%2C+NOT+meme%2C+NOT+screencap%2C+NOT+edit+screencap%2C+NOT+animated%2C+NOT+absurd+res%2C+NOT+watermark%2C+NOT+eqg%2C+NOT+human%2C+NOT+sfm&sf=random%3A" + random + "&filter_id=56027"
+var url = "https://derpibooru.org/search.json?q=score.gte%3A250%2C+Aspect_ratio%3A" + aspect_ratio + "~0.1" + lewd + "%2C+NOT+text%2C+NOT+comic%2C+NOT+meme%2C+NOT+screencap%2C+NOT+edit+screencap%2C+NOT+animated%2C+NOT+comparison%2C+NOT+absurd+res%2C+NOT+watermark%2C+NOT+eqg%2C+NOT+human%2C+NOT+sfm&sf=random%3A" + random + "&filter_id=56027"
 
 console.log(url)
 
@@ -77,7 +77,7 @@ xmlhttp.onreadystatechange = function() {
         var array_len = myObj.search.length;
         var image_num = Math.floor((Math.random() * array_len) + 0);
 		if (myObj.search[image_num] == undefined) {
-			url = "https://derpibooru.org/search.json?q=landscape%2C+background&sf=random%3A" + random
+			url = "https://derpibooru.org/search.json?q=landscape%2C+background%2C+NOT+comparison&sf=random%3A" + random
 			xmlhttp.open("GET", url, true);
 			xmlhttp.send();
 			return
