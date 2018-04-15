@@ -60,7 +60,7 @@ var aspect_ratio = screen_x / screen_y
 
 //generates the url for derpibooru
 if (lewdness == "Lewd") {
-	var lewd = "%2C+explicit%2C+suggestive%2C+NOT+watersports%2C+NOT+scat%2C+NOT+hyper%2C+NOT+foalcon"
+	var lewd = "%2C+explicit+%7C%7C+suggestive%2C+NOT+watersports%2C+NOT+scat%2C+NOT+hyper%2C+NOT+foalcon"
 } else {
 	var lewd = "%2C+safe%2C+NOT+anthro"
 }
