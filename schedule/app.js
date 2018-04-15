@@ -38,17 +38,14 @@ if (lewdness == "Lewd") {
 }
 document.getElementById("lewd").textContent = lewd_out;
 
-//Lewds
-function lewd() {
-	console.log(getCookie("lewdness"))
+function set_lewd() {
 	if (lewdness == "Unlewd") {
 		setCookie("lewdness", "Lewd", 365)
 	} else if (lewdness == "Lewd") {
 		setCookie("lewdness", "Unlewd", 365)
-	};
-	console.log(getCookie("lewdness"))
-	location.reload();
-};
+	}
+	location.reload()
+}
 
 //Collects the aspect ratio of the screen of the device
 var screen_x = window.innerWidth
