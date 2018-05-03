@@ -1,91 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 html {
-  background: no-repeat center center fixed;
-  background-color: lightblue;
-  background-size: cover;
-  min-height: 400px;
+	background: no-repeat center center fixed;
+	background-color: lightblue;
+	background-size: cover;
+	min-height: 400px;
 }
 
 #time {
-  text-align: center;
-  font-family: Lucida Console;
-  font-size: 26px;
+	text-align: center;
+	font-family: 'Open Sans', Lucida Console;
+	font-size: 26px;
 }
 
 #day {
-  text-align: center;
-  font-family: Lucida Console;
-  font-size: 26px;
+	text-align: center;
+	font-family: 'Open Sans', Lucida Console;
+	font-size: 26px;
 }
 
 #schedule {
-  text-align: center;
-  font-family: Lucida Console;
-  font-size: 26px;
+	text-align: center;
+	font-family: 'Open Sans', Lucida Console;
+	font-size: 26px;
 }
 
 #pill {
-  text-align: center;
-  vertical-align: middle;
-  font-family: Lucida Console;
-  font-size: 17px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Open Sans', Lucida Console;
+	font-size: 17px;
 }
 
 #lewd {
-  height: 16px;
-  padding-top: 3px;
-  padding-left: 2px;
-  padding-right: 2px;
-  text-align: center;
-  border: 1px;
-  border-radius: 5px;
-  font-size: 14px;
-  font-family: Lucida Console;
-  background-color: #ffffff;
-  color: black;
-  text-decoration: none;
-  opacity: 0.8;
-  position: absolute;
-  right: 50px;
-  bottom: 6px;
+	height: 16px;
+	padding-top: 3px;
+	padding-left: 2px;
+	padding-right: 2px;
+	text-align: center;
+	border: 1px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-family: 'Open Sans', Lucida Console;
+	background-color: #ffffff;
+	color: black;
+	text-decoration: none;
+	opacity: 0.8;
+	position: absolute;
+	right: 50px;
+	bottom: 6px;
 }
 
 .astext {
-    background:none;
-    border:none;
-    margin:0;
-    padding:0;
-	cursor:pointer
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
 }
 
 .pill {
-  line-height: 190%;
-  width: 330px;
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  border-radius: 500px;
-  padding: .6em;
-  opacity: 0.8;
+	line-height: 190%;
+	width: 330px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #ffffff;
+	border-radius: 500px;
+	padding: .6em;
+	opacity: 0.8;
 }
 
 .id {
-  height: 16px;
-  padding-left: 2px;
-  padding-right: 2px;
-  padding-top: 3px;
-  text-align: center;
-  border: 1px;
-  border-radius: 5px;
-  font-size: 14px;
-  font-family: Lucida Console;
-  background-color: #ffffff;
-  color: black;
-  text-decoration: none;
-  opacity: 0.8;
-  position: absolute;
-  right: 6px;
-  bottom: 6px;
+	height: 16px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 3px;
+	text-align: center;
+	border: 1px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-family: 'Open Sans', Lucida Console;
+	background-color: #ffffff;
+	color: black;
+	text-decoration: none;
+	opacity: 0.8;
+	position: absolute;
+	right: 6px;
+	bottom: 6px;
 }
