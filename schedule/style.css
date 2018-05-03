@@ -33,7 +33,7 @@ html {
 }
 
 #lewd {
-	line-height: 10px;
+	line-height: 8px;
 	padding-top: 3px;
 	padding-bottom: 3px;
 	padding-left: 2px;
@@ -75,10 +75,11 @@ html {
 }
 
 .id {
-	height: 16px;
+	line-height: 8px;
 	padding-left: 2px;
 	padding-right: 2px;
 	padding-top: 3px;
+	padding-bottom: 3px;
 	text-align: center;
 	border: 1px;
 	border-radius: 5px;
