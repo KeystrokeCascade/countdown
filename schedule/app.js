@@ -128,33 +128,35 @@ function schedule() {
 	var time_next = agenda_out[2];
 	
 	//gets the time until next task
+	time_next = moment(new Date('1970-1-1' + " " + time_next)).subtract(moment.duration(time_output + ":00")).format('HHmm');
+	time_next = time_next.substr(0,2) + "h " + time_next.substr(2,3) + "m"
 	
 	//prints the current agenda
 	document.getElementById("schedule").textContent = agenda;
 	document.getElementById("up_next").textContent = up_next;
-	document.getElementById("time_next").textContent = time_next.substr(0,5);
+	document.getElementById("time_next").textContent = time_next;
 };
 
 //Chooses what time and day correspond to the schedule
 function agendaGet(day, time) {
-	var agenda = ""
-	var up_next = ""
-	var time_next = ""
+	var agenda = "";
+	var up_next = "";
+	var time_next = "";
 
 //Sunday
 	if (day == "Sunday") {
-		if (time >= 0 && time <= 700) {
+		if (time >= 0 && time <= 800) {
 			agenda = "sleeping"
 			up_next = "at home"
-			time_next = "07:00:00"
-		} else if (time >= 701 && time <= 2200) {
+			time_next = "08:00:00"
+		} else if (time >= 801 && time <= 2200) {
 			agenda = "at home"
 			up_next = "sleeping"
-			time_next = 22
+			time_next = "20:00:00"
 		} else if (time >= 2201 && time <= 2400) {
 			agenda = "sleeping"
 			up_next = "on the school bus"
-			time_next = 31.45
+			time_next = "31:45:00"
 		};
 
 //Monday
@@ -162,43 +164,43 @@ function agendaGet(day, time) {
 		if (time >= 0 && time <= 745) {
 			agenda = "sleeping"
 			up_next = "on the school bus"
-			time_next = 7.45
+			time_next = "07:45:00"
 		} else if (time >= 746 && time <= 845) {
 			agenda = "on the school bus"
 			up_next = "studying"
-			time_next = 8.45
+			time_next = "08:45:00"
 		} else if (time >= 846 && time <= 1115) {
 			agenda = "studying"
 			up_next = "on break"
-			time_next = 11.15
+			time_next = "11:15:00"
 		} else if (time >= 1116 && time <= 1135) {
 			agenda = "on break"
 			up_next = "studying"
-			time_next = 11.35
+			time_next = "11:35:00"
 		} else if (time >= 1136 && time <= 1305) {
 			agenda = "studying"
 			up_next = "on break"
-			time_next = 13.05
+			time_next = "13:05:00"
 		} else if (time >= 1306 && time <= 1350) {
 			agenda = "on break"
 			up_next = "studying"
-			time_next = 13.50
+			time_next = "13:50:00"
 		} else if (time >= 1351 && time <= 1520) {
 			agenda = "studying"
 			up_next = "on the school bus"
-			time_next = 15.20
+			time_next = "15:20:00"
 		} else if (time >= 1521 && time <= 1620) {
 			agenda = "on the school bus"
 			up_next = "at home"
-			time_next = 16.20
+			time_next = "16:20:00"
 		} else if (time >= 1621 && time <= 2200) {
 			agenda = "at home"
 			up_next = "sleeping"
-			time_next = 22
+			time_next = "22:00:00"
 		} else if (time >= 2201 && time <= 2400) {
 			agenda = "sleeping"
 			up_next = "on the school bus"
-			time_next = 31.45
+			time_next = "31:45:00"
 		};
 
 //Tuesday
@@ -206,47 +208,47 @@ function agendaGet(day, time) {
 		if (time >= 0 && time <= 745) {
 			agenda = "sleeping"
 			up_next = "on the school bus"
-			time_next = 7.45
+			time_next = "07:45:00"
 		} else if (time >= 746 && time <= 845) {
 			agenda = "on the school bus"
 			up_next = "studying"
-			time_next = 8.45
+			time_next = "08:45:00"
 		} else if (time >= 846 && time <= 1115) {
 			agenda = "studying"
 			up_next = "on break"
-			time_next = 11.45
+			time_next = "11:45:00"
 		} else if (time >= 1116 && time <= 1135) {
 			agenda = "on break"
 			up_next = "studying"
-			time_next = 11.35
+			time_next = "11:35:00"
 		} else if (time >= 1136 && time <= 1305) {
 			agenda = "studying"
 			up_next = "on break"
-			time_next = 13.05
+			time_next = "13:05:00"
 		} else if (time >= 1306 && time <= 1350) {
 			agenda = "on break"
 			up_next = "studying"
-			time_next = 13.50
+			time_next = "13:50:00"
 		} else if (time >= 1351 && time <= 1520) {
 			agenda = "studying"
 			up_next = "on the school bus"
-			time_next = 15.20
+			time_next = "15:20:00"
 		} else if (time >= 1521 && time <= 1615) {
 			agenda = "on the school bus"
 			up_next = "at work"
-			time_next = 16.15
+			time_next = "16:15:00"
 		} else if (time >= 1616 && time <= 1745) {
 			agenda = "at work"
 			up_next = "at home"
-			time_next = 17.45
+			time_next = "17:45:00"
 		} else if (time >= 1746 && time <= 2200) {
 			agenda = "at home"
 			up_next = "sleeping"
-			time_next = 22
+			time_next = "22:00:00"
 		} else if (time >= 2201 && time <= 2400) {
 			agenda = "sleeping"
 			up_next = "on the school bus"
-			time_next = 31.45
+			time_next = "31:45:00"
 		};
 
 //Wednesday
@@ -254,43 +256,43 @@ function agendaGet(day, time) {
 		if (time >= 0 && time <= 745) {
 			agenda = "sleeping"
 			up_next = "on the school bus"
-			time_next = 7.45
+			time_next = "07:45:00"
 		} else if (time >= 746 && time <= 845) {
 			agenda = "on the school bus"
 			up_next = "studying"
-			time_next = 8.45
+			time_next = "08:45:00"
 		} else if (time >= 846 && time <= 1115) {
 			agenda = "studying"
 			up_next = "on break"
-			time_next = 11.15
+			time_next = "11:15:00"
 		} else if (time >= 1116 && time <= 1135) {
 			agenda = "on break"
 			up_next = "studying"
-			time_next = 11.35
+			time_next = "11:35:00"
 		} else if (time >= 1136 && time <= 1230) {
 			agenda = "studying"
 			up_next = "at VET"
-			time_next = 12.30
+			time_next = "12:30:00"
 		} else if (time >= 1231 && time <= 1450) {
 			agenda = "at VET"
 			up_next = "on break"
-			time_next = 14.50
+			time_next = "14:50:00"
 		} else if (time >= 1451 && time <= 1500) {
 			agenda = "on break"
 			up_next = "at VET"
-			time_next = 15
+			time_next = "15:00:00"
 		} else if (time >= 1501 && time <= 1745) {
 			agenda = "at VET"
 			up_next = "at home"
-			time_next = 17.45
+			time_next = "17:45:00"
 		} else if (time >= 1745 && time <= 2200) {
 			agenda = "at home"
 			up_next = "sleeping"
-			time_next = 22
+			time_next = "22:00:00"
 		} else if (time >= 2201 && time <= 2400) {
 			agenda = "sleeping"
 			up_next = "on the school bus"
-			time_next = 31.45
+			time_next = "31:45:00"
 		};
 	  
 //Thursday
@@ -298,43 +300,43 @@ function agendaGet(day, time) {
 		if (time >= 0 && time <= 745) {
 			agenda = "sleeping"
 			up_next = "on the school bus"
-			time_next = 7.45
+			time_next = "07:45:00"
 		} else if (time >= 746 && time <= 845) {
 			agenda = "on the school bus"
 			up_next = "studying"
-			time_next = 8.45
+			time_next = "08:45:00"
 		} else if (time >= 846 && time <= 1115) {
 			agenda = "studying"
 			up_next = "on break"
-			time_next = 11.15
+			time_next = "11:15:00"
 		} else if (time >= 1116 && time <= 1135) {
 			agenda = "on break"
 			up_next = "studying"
-			time_next = 11.35
+			time_next = "11:35:00"
 		} else if (time >= 1136 && time <= 1305) {
 			agenda = "studying"
 			up_next = "on break"
-			time_next = 13.05
+			time_next = "13:05:00"
 		} else if (time >= 1306 && time <= 1350) {
 			agenda = "on break"
 			up_next = "studying"
-			time_next = 13.50
+			time_next = "13:50:00"
 		} else if (time >= 1351 && time <= 1520) {
 			agenda = "studying"
 			up_next = "on the school bus"
-			time_next = 15.20
+			time_next = "15:20:00"
 		} else if (time >= 1521 && time <= 1620) {
 			agenda = "on the school bus"
 			up_next = "at home"
-			time_next = 16.20
+			time_next = "16:20:00"
 		} else if (time >= 1621 && time <= 2200) {
 			agenda = "at home"
 			up_next = "sleeping"
-			time_next = 22
+			time_next = "22:00:00"
 		} else if (time >= 2201 && time <= 2400) {
 			agenda = "sleeping"
 			up_next = "on the school bus"
-			time_next = "07:45:00"
+			time_next = "31:45:00"
 		};
 
 //Friday
@@ -342,47 +344,47 @@ function agendaGet(day, time) {
 		if (time >= 0 && time <= 745) {
 			agenda = "sleeping"
 			up_next = "on the school bus"
-			time_next = 7.45
+			time_next = "07:45:00"
 		} else if (time >= 746 && time <= 845) {
 			agenda = "on the school bus"
 			up_next = "studying"
-			time_next = 8.45
+			time_next = "08:45:00"
 		} else if (time >= 846 && time <= 1115) {
 			agenda = "studying"
 			up_next = "on break"
-			time_next = 11.15
+			time_next = "11:15:00"
 		} else if (time >= 1116 && time <= 1135) {
 			agenda = "on break"
 			up_next = "studying"
-			time_next = 11.35
+			time_next = "11:35:00"
 		} else if (time >= 1136 && time <= 1305) {
 			agenda = "studying"
 			up_next = "on break"
-			time_next = 13.05
+			time_next = "13:05:00"
 		} else if (time >= 1306 && time <= 1350) {
 			agenda = "on break"
 			up_next = "studying"
-			time_next = 13.50
+			time_next = "13:50:00"
 		} else if (time >= 1351 && time <= 1520) {
 			agenda = "studying"
 			up_next = "on the school bus"
-			time_next = 15.20
+			time_next = "15:20:00"
 		} else if (time >= 1521 && time <= 1600) {
 			agenda = "on the school bus"
 			up_next = "at work"
-			time_next = 16
+			time_next = "16:00:00"
 		} else if (time >= 1601 && time <= 1820) {
 			agenda = "at work"
 			up_next = "at home"
-			time_next = 18.20
+			time_next = "18:20:00"
 		} else if (time >= 1821 && time <= 2200) {
 			agenda = "at home"
 			up_next = "sleeping"
-			time_next = 22
+			time_next = "22:00:00"
 		} else if (time >= 2201 && time <= 2400) {
 			agenda = "sleeping"
 			up_next = "at home"
-			time_next = 32
+			time_next = "32:00:00"
 		};
 
 //Saturday
@@ -390,18 +392,18 @@ function agendaGet(day, time) {
 		if (time >= 0 && time <= 800) {
 			agenda = "sleeping"
 			up_next = "at home"
-			time_next = 8
+			time_next = "08:00:00"
 		} else if (time >= 701 && time <= 2330) {
 			agenda = "at home"
 			up_next = "sleeping"
-			time_next = 23
+			time_next = "23:00:00"
 		} else if (time >= 2331 && time <= 2400) {
 			agenda = "sleeping"
 			up_next = "at home"
-			time_next = 31
+			time_next = "32:00:00"
 		};
 	};
 	
-	var agenda_out = [agenda, up_next, time_next]
-	return agenda_out
+	var agenda_out = [agenda, up_next, time_next];
+	return agenda_out;
 };
