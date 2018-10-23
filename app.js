@@ -1,5 +1,5 @@
 //loads the dates from dates.txt
-fetch('/next/page')
+fetch('dates.txt')
   .then(function(response) {
     return response.text();
   }).then(function(text) { 
