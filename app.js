@@ -1,9 +1,11 @@
 //loads the dates from dates.txt
-var dates = fetch('dates.txt');
-	.then(function(response) {
-		return response.text()
-	});
-console.log(dates);
+fetch('/next/page')
+  .then(function(response) {
+    return response.text();
+  }).then(function(text) { 
+  	// <!DOCTYPE ....
+  	console.log(text); 
+  });
 
 //sets date to countdown to
 var countDownDate = new Date("2019-10-19 00:00:00").getTime();
