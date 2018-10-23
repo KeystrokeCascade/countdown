@@ -4,12 +4,9 @@ var dates = fetch('dates.txt')
 		return response.text();
 	}).then(function(text) { 
 		console.log(text);
-		if (typeof text == "string") {
-			console.log(typeof text)
-		}
 		return text;
 	});
-//while (typeof dates != "string") {};
+while (typeof dates != "string") {console.log("loading date"};
 console.log(dates);
 
 //sets date to countdown to
