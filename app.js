@@ -4,7 +4,7 @@ function reqListener () {
 
 var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
-oReq.open("GET", "https://keystrokecascade.github.io/dates.txt");
+oReq.open("GET", "dates.txt");
 oReq.send();
 
 //sets date to countdown to
