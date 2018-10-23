@@ -3,12 +3,12 @@ function reqListener () {
   console.log(this.responseText);
   return dates = this.responseText;
 }
-reqListener();
 var dates;
 var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
 oReq.open("GET", "dates.txt");
 oReq.send();
+reqListener();
 console.log(dates);
 
 //sets date to countdown to
