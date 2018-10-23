@@ -1,5 +1,9 @@
+@font-face {
+  font-family: 'Segment7Standard';
+  src: url('Segment7Standard.otf');
+}
 body {
-  font-family: 'Segment7Standard'; 
+  font-family: 'Segment7Standard';
   font-size: 20em;
   color: red;
   background-color: black;
