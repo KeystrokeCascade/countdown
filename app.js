@@ -2,6 +2,7 @@
 var date = "";
 function reqListener () {
   date = this.responseText;
+  console.log(date)
 }
 var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
