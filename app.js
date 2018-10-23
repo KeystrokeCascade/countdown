@@ -1,5 +1,5 @@
 //loads the dates from dates.txt
-var dates = fetch('dates.txt', {method: 'get'})
+var dates = fetch('dates.txt').then(function(response)
 console.log(dates);
 
 //sets date to countdown to
