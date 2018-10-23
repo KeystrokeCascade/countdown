@@ -2,8 +2,8 @@
 function reqListener () {
   console.log(this.responseText);
   dates = this.responseText;
-  console.log(dates);
 }
+reqListener();
 var dates;
 var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
