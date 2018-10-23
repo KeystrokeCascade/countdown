@@ -1,15 +1,5 @@
 //loads the dates from dates.txt
-
-function foo(callback) {
-	var httpRequest = new XMLHttpRequest();
-	httpRequest.onload = function(){ // when the request is loaded
-		callback(httpRequest.responseText);// we're calling our method
-	};
-	httpRequest.open('GET', "dates.txt");
-	httpRequest.send();
-};
-
-var dates = foo();
+var dates = fetch('dates.txt', {method: 'get'})
 console.log(dates);
 
 //sets date to countdown to
