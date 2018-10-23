@@ -6,6 +6,7 @@ var dates = fetch('dates.txt')
 		console.log(text);
 		return text
 	});
+console.log(dates);
 
 //sets date to countdown to
 var countDownDate = new Date("2019-10-19 00:00:00").getTime();
