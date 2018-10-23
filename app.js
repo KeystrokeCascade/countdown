@@ -1,6 +1,6 @@
 //loads the dates from dates.txt
 var xhttp = new XMLHttpRequest();
-xhttp.open("GET", "filename", true);
+xhttp.open("GET", "dates.txt", true);
 xhttp.send();
 var dates = xhttp.responseText;
 console.log(dates);
