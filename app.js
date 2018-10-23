@@ -1,5 +1,12 @@
-var dates = fetch("https://keystrokecascade.github.io/dates.txt")
-console.log(dates)
+function reqListener () {
+  console.log(this.responseText);
+}
+
+var oReq = new XMLHttpRequest();
+oReq.addEventListener("load", reqListener);
+oReq.open("GET", "https://keystrokecascade.github.io/dates.txt");
+oReq.send();
+
 //sets date to countdown to
 var countDownDate = new Date("2019-10-19 00:00:00").getTime();
 //updates every second
