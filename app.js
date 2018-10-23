@@ -1,3 +1,5 @@
+var dates = fetch("https://keystrokecascade.github.io/dates.txt")
+console.log(dates)
 //sets date to countdown to
 var countDownDate = new Date("2019-10-19 00:00:00").getTime();
 //updates every second
