@@ -1,7 +1,7 @@
 //loads the dates from dates.txt
 function reqListener () {
   console.log(this.responseText);
-  dates = this.responseText;
+  return dates = this.responseText;
 }
 reqListener();
 var dates;
