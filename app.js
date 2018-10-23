@@ -1,14 +1,8 @@
 //loads the dates from dates.txt
-var dates;
-function reqListener () {
-  console.log(this.responseText);
-  dates = this.responseText;
-}
-var oReq = new XMLHttpRequest();
-oReq.addEventListener("load", reqListener);
-oReq.open("GET", "dates.txt");
-oReq.send();
-
+var xhttp = new XMLHttpRequest();
+xhttp.open("GET", "filename", true);
+xhttp.send();
+var dates = xhttp.responseText;
 console.log(dates);
 
 //sets date to countdown to
