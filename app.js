@@ -4,9 +4,10 @@ var dates = fetch('dates.txt')
 		return response.text();
 	}).then(function(text) { 
 		console.log(text);
-		return text
+		console.log(typeof text)
+		return text;
 	});
-while (typeof dates != "string") {};
+//while (typeof dates != "string") {};
 console.log(dates);
 
 //sets date to countdown to
