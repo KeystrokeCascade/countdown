@@ -4,7 +4,7 @@ var dates = fetch('dates.txt')
 		return response.text();
 	}).then(function(text) { 
 		console.log(text);
-		console.log(typeof text)
+		//console.log(typeof text)
 		return text;
 	});
 //while (typeof dates != "string") {};
