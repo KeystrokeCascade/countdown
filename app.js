@@ -1,13 +1,11 @@
 //loads the dates from dates.txt
-function reqListener () {
-  var date = this.responseText;
-  return date;
-}
-var oReq = new XMLHttpRequest();
-oReq.addEventListener("load", reqListener);
-oReq.open("GET", "dates.txt");
-oReq.send();
+var Req = new XMLHttpRequest();
+var date = ""
+Req.addEventListener("load", date);
+Req.open("GET", "dates.txt");
+Req.send();
 console.log(date)
+
 //sets date to countdown to
 var countDownDate = new Date("2019-10-19 00:00:00").getTime();
 //updates every second
