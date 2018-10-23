@@ -6,7 +6,7 @@ var dates = fetch('dates.txt')
 		console.log(text);
 		return text;
 	});
-while (typeof dates != "string") {console.log("loading date"};
+while (typeof dates != "string") {console.log("loading date")};
 console.log(dates);
 
 //sets date to countdown to
