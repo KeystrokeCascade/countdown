@@ -1,7 +1,7 @@
 //loads the dates from dates.txt
 var dates = fetch('dates.txt');
 	.then(function(response) {
-		return response.text();
+		return response.text()
 	});
 console.log(dates);
 
