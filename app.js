@@ -1,6 +1,6 @@
 //loads the dates from dates.txt
 
-function request(callback) {
+function foo(callback) {
 	var httpRequest = new XMLHttpRequest();
 	httpRequest.onload = function(){ // when the request is loaded
 		callback(httpRequest.responseText);// we're calling our method
@@ -9,7 +9,7 @@ function request(callback) {
 	httpRequest.send();
 };
 
-var dates = request();
+var dates = foo();
 console.log(dates);
 
 //sets date to countdown to
