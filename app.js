@@ -1,10 +1,10 @@
 //loads the dates from dates.txt
-var dates = fetch('dates.txt')
+fetch('dates.txt')
 	.then(function(response) {
 		return response.text();
 	}).then(function(text) { 
 		console.log(text);
-		return text;
+		dates = text;
 	});
 while (typeof dates != "string") {console.log("loading date")};
 console.log(dates);
