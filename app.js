@@ -1,7 +1,7 @@
 //loads the dates from dates.txt
 function request() {
 	var xhttp = new XMLHttpRequest();
-	xhttp.open("GET", "dates.txt");
+	xhttp.open("GET", "dates.txt", false);
 	xhttp.send();
 	return xhttp.responseText;
 };
