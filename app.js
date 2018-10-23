@@ -1,9 +1,6 @@
 //loads the dates from dates.txt
-function reqListener () {
-  date = this.responseText;
-}
 var oReq = new XMLHttpRequest();
-oReq.addEventListener("load", reqListener);
+oReq.addEventListener("load", var date = this.responseText);
 oReq.open("GET", "dates.txt");
 oReq.send();
 console.log(date)
