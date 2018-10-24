@@ -1,7 +1,8 @@
 //loads the dates from dates.txt
 async function datesGet() {
     const response = await fetch('dates.txt', {});
-    return response;
+    console.log(response);
+	return response;
 };
 dates = datesGet();
 console.log(dates);
