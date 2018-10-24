@@ -1,14 +1,7 @@
-//loads the dates from dates.txt
-async function datesGet() {
-    const response = await fetch('dates.txt', {});
-    console.log(response);
-	return response;
-};
-dates = datesGet();
-console.log(dates);
-
+//input date here with format "YYYY-MM-DD"
+var date = "2019-10-18"
 //sets date to countdown to
-var countDownDate = new Date("2019-10-19 00:00:00").getTime();
+var countDownDate = new Date(date + " 00:00:00").getTime();
 //updates every second
 var x = setInterval(function() {
 	//gets todays date+time
