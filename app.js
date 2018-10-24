@@ -1,12 +1,9 @@
 //loads the dates from dates.txt
-fetch('dates.txt')
-	.then(function(response) {
-		return response.text();
-	}).then(function(text) { 
-		console.log(text);
-		dates = text;
-	});
-
+async function datesGet() {
+    const response = await fetch('dates.txt', {});
+    return response;
+};
+dates = datesGet();
 console.log(dates);
 
 //sets date to countdown to
